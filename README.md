@@ -63,5 +63,5 @@ stopped (`vagrant halt`) once the workshop is finished.
 
 ## Troubleshooting
 
-If there are problems with timeouts (e.g. "unexpected EOF") during the initial setup then run
+If there are problems such as "unexpected EOF" during the initial setup then run
 `vagrant reload --provision` to try again.
