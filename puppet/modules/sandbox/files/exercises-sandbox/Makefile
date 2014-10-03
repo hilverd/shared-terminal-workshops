@@ -1,4 +1,4 @@
-image_name     = shared-terminal-workshops/sandbox
+image_name     = shared_terminal_workshops/sandbox
 version        = latest
 container_name = sandbox
 

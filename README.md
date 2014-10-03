@@ -56,3 +56,8 @@ stopped (`vagrant halt`) once the workshop is finished.
 
 * The Docker container used for each participant's session is based on
   `puppet/modules/sandbox/files/exercises-sandbox/Dockerfile`.
+
+## Troubleshooting
+
+If there are problems with timeouts (e.g. "unexpected EOF") during the initial setup then run
+`vagrant reload --provision` to try again.

@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# Runs a Docker container from the image shared-terminal-workshops/sandbox.
+# Runs a Docker container from the image shared_terminal_workshops/sandbox.
 
 tmux -S /var/tmux/"$USER" unbind-key -a
 
@@ -16,4 +16,4 @@ if [ ! -d exercises-"$USER" ]; then
 fi
 
 docker run -t -i --rm -v "$PWD"/exercises-"$USER":/home/dev/exercises --name="$USER" \
-  shared-terminal-workshops/sandbox su - dev
+  shared_terminal_workshops/sandbox su - dev
