@@ -31,7 +31,7 @@ stopped (`vagrant halt`) once the workshop is finished.
 
 ## Installation
 
-* Clone this repository: `git clone https://github.com/hilverd/shared-terminal-workshops.git`
+* Clone this repository: `git clone https://github.com/hilverd/shared-terminal-workshops.git`.
 
 * In the directory `shared-terminal-workshops`, run `./present.sh`. This will take a while to run
   initially, as it involves downloading an Ubuntu base box for Vagrant and Ubuntu images for Docker.
@@ -46,7 +46,7 @@ stopped (`vagrant halt`) once the workshop is finished.
   `alice` and `bob` are available with password `vagrant`. To find out `<host-ip>`, see the output
   of `ifconfig` (or on Linux use `hostname -I`).
 
-* To end the workshop, the presenter presses Control-B Control-D to detach from the `tmux` session
+* To end the workshop, the presenter presses Control-b d to detach from the `tmux` session
   and then runs `vagrant halt` to stop the VM.
 
 ![Screenshot](img/screenshot.jpg?raw=true "Screenshot")
