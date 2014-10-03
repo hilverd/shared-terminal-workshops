@@ -40,8 +40,9 @@ stopped (`vagrant halt`) once the workshop is finished.
 
 * To start a presentation session, the presenter runs `./present.sh`.
 
-* Each participant connects to the VM using `ssh -p 2222 <participant-name>@<host-ip>`. By default,
-  users `alice` and `bob` are available with password `vagrant`.
+* Each participant connects to the VM using `ssh -p 2222 <user>@<host-ip>`. By default, the users
+  `alice` and `bob` are available with password `vagrant`. To find out `<host-ip>`, see the output
+  of `ifconfig` (or on Linux use `hostname -I`).
 
 * To end the presentation, the presenter runs `vagrant halt`.
 
