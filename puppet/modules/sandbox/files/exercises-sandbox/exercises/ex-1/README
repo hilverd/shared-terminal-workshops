@@ -1,0 +1,9 @@
+Using sort, uniq and tail, write a (very small) script exception.sh so that we
+can run
+
+./exception.sh <names.txt
+
+to print the most common exception in names.txt along with its number of
+occurrences.
+
+Hint: use the -c option for uniq.
