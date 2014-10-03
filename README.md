@@ -49,6 +49,8 @@ stopped (`vagrant halt`) once the workshop is finished.
 * To end the workshop, the presenter presses Control-B Control-D to detach from the `tmux` session
   and then runs `vagrant halt` to stop the VM.
 
+![Screenshot](img/screenshot.jpg?raw=true "Screenshot")
+
 ## Configuration
 
 * The user names and passwords of participants are configured in
