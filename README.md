@@ -45,7 +45,8 @@ stopped (`vagrant halt`) once the workshop is finished.
   `alice` and `bob` are available with password `vagrant`. To find out `<host-ip>`, see the output
   of `ifconfig` (or on Linux use `hostname -I`).
 
-* To end the presentation, the presenter runs `vagrant halt`.
+* To end the workshop, the presenter presses Control-B Control-D to detach from the `tmux` session
+  and then runs `vagrant halt` to stop the VM.
 
 ## Configuration
 
