@@ -38,7 +38,8 @@ stopped (`vagrant halt`) once the workshop is finished.
 
 ## Usage
 
-* To start a presentation session, the presenter runs `./present.sh`.
+* To start a presentation session, the presenter runs `./present.sh`. Once the VM is configured and
+  running, a `tmux` session is started in which every logged in participant gets a window.
 
 * Each participant connects to the VM using `ssh -p 2222 <user>@<host-ip>`. By default, the users
   `alice` and `bob` are available with password `vagrant`. To find out `<host-ip>`, see the output
