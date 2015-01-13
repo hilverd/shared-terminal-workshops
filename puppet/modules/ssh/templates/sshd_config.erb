@@ -46,3 +46,17 @@ ListenAddress <%= listen %>
 <%- end -%>
 <%- end -%>
 <%- end -%>
+
+# The simplest way is to enumerate the 'tmux_users' var found in the 'accounts' class,
+# but this isn't recommended as this is an out of scope lookup and isn't clear or safe.
+# <%- @tmux_users.each do |user| -%>
+# Match User <%= user %>
+#   ForceCommand /home/vagrant/tmux-session-for-user.sh
+# <%- end -%>
+
+# Instead we should fully qualify the var like this, which makes it much clearer:
+# Note that pre Puppet 3, you would need to use this function instead: scope.lookupvar('::accounts::tmux_users')
+<%- scope['::accounts::tmux_users'].each do |user| -%>
+Match User <%= user %>
+    ForceCommand /home/vagrant/tmux-session-for-user.sh
+<%- end -%>
