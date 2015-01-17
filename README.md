@@ -16,7 +16,8 @@ session.
 
 This project uses [VirtualBox](https://www.virtualbox.org/), [Vagrant](https://www.vagrantup.com/),
 [Puppet](http://puppetlabs.com/), [tmux](http://tmux.sourceforge.net/) and
-[Docker](https://www.docker.com/).
+[Docker](https://www.docker.com/). Thanks to [Ryan Conway](https://github.com/rylon) for simplifying
+the way user accounts are set up.
 
 ## Caveats
 

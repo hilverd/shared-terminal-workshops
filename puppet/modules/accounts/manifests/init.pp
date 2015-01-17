@@ -2,7 +2,6 @@ class accounts {
   include docker
   require docker
 
-  # Note that you also need to change the users in ssh::server below
   $tmux_users = ['alice', 'bob']
 
   define create_user {
