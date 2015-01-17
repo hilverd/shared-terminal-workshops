@@ -18,7 +18,6 @@ Vagrant::configure("2") do |config|
 
   $install_puppet_modules = <<SCRIPT
   puppet module list | grep -q puppetlabs-apt || puppet module install puppetlabs/apt
-  puppet module list | grep -q saz-ssh || puppet module install saz/ssh
   puppet module list | grep -q garethr-docker || puppet module install garethr/docker
 SCRIPT
 
@@ -27,6 +26,8 @@ SCRIPT
   config.vm.provision "shell", inline: "rm -rf /var/tmux"
 
   config.vm.provision :puppet do |puppet|
+    # Useful debugging options:
+    # puppet.options = "--verbose --debug --trace"
     puppet.manifests_path = 'puppet/manifests'
     puppet.manifest_file = 'site.pp'
     puppet.module_path = 'puppet/modules'
